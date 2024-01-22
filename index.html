@@ -21,84 +21,96 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-
     <!-- <===custom styles===> -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-                sans: ['Manrope', 'sans-serif'],
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              paragraph: "#6D6D70",
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans-serif"],
             },
           },
-        };
-      </script>
-      
-
+        },
+      };
+    </script>
   </head>
   <body class="font-sans">
     <header class="container mx-auto">
-<div class="my-12">
+      <div class="my-12">
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/1.png)]"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
 
+          <div
+            id="slide2"
+            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hokey-banner.avif)]"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
 
-      
-      <div class="carousel w-full">
-        <div id="slide1"  class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/1.png)]">
-         
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hockey-banner2.jpg)]"
+          >
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
         </div>
-        
-        
-        <div id="slide2"  class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hokey-banner.avif)]">
-         
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        
-        
-        <div id="slide3"  class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hockey-banner2.jpg)]">
-          
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        
-        
-        
-        
       </div>
 
-    </div>
-
-     
-
-      <div class="flex justify-end shadow-xl lg:mr-8 lg:-mt-72 ">
+      <div class="flex justify-end shadow-xl lg:mr-8 lg:-mt-72">
         <div
-        class="bg-[#131318] text-[#fff] py-8 sm:mt-4 px-4 rounded-xl lg:w-1/2 z-40"
-      >
-        <h3 class="text-2xl lg:text-3xl mb-4">Meet all the heroes from the field</h3>
-        <p class="w-auto">
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-          turpis placerat dolor. Purus urna in sit nullam proin.
-        </p>
+          class="bg-[#131318] text-[#fff] py-8 sm:mt-4 px-4 rounded-xl lg:w-1/2"
+        >
+          <h3 class="text-2xl lg:text-3xl mb-4">
+            Meet all the heroes from the field
+          </h3>
+          <p class="w-auto">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
       </div>
-      </div>
-     
-
-   
-
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <!-- <===Professional Hockeys Club====> -->
+      <section class="my-24">
+        <h3 class="text-3xl text-center mb-4 font-bold text-[#131318]">
+          Professional Hockeys Club
+        </h3>
+        <p class="w-2/4 text-center mx-auto text-paragraph">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+        <div>
+            <div class="radial-progress rotate-rotate-45		" style="--value:90;" role="progressbar">90%</div>
+
+            <div class="radial-progress" style="--value:90;" role="progressbar">100%</div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

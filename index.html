@@ -37,6 +37,9 @@
         },
       };
     </script>
+
+    <!-- <====css link====> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-sans">
     <header class="container mx-auto">
@@ -44,36 +47,24 @@
         <div class="carousel w-full">
           <div
             id="slide1"
-            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/1.png)]"
+            class="carousel-item carousel_image1 relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover"
           >
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❮</a>
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
 
           <div
             id="slide2"
-            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hokey-banner.avif)]"
+            class="carousel-item carousel_image2 relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hokey-banner.avif)]"
           >
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
               <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-
-          <div
-            id="slide3"
-            class="carousel-item relative w-full bg-no-repeat h-100 py-80 rounded-xl bg-center bg-cover bg-[url(./B9A3-Hockeys-main/images/hockey-banner2.jpg)]"
-          >
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
@@ -82,7 +73,7 @@
 
       <div class="flex justify-end shadow-xl lg:mr-8 lg:-mt-72">
         <div
-          class="bg-[#131318] text-[#fff] py-8 sm:mt-4 px-4 rounded-xl lg:w-1/2"
+          class="bg-[#131318] text-[#fff] py-8 sm:mt-4 px-4 rounded-xl lg:w-1/2 z-30"
         >
           <h3 class="text-2xl lg:text-3xl mb-4">
             Meet all the heroes from the field
@@ -100,14 +91,70 @@
         <h3 class="text-3xl text-center mb-4 font-bold text-[#131318]">
           Professional Hockeys Club
         </h3>
-        <p class="w-2/4 text-center mx-auto text-paragraph">
+        <p class="w-auto lg:w-2/4 text-center mx-auto text-paragraph">
           Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
           placerat dolor. Purus urna in sit nullam proin.
         </p>
-        <div>
-            <div class="radial-progress rotate-rotate-45		" style="--value:90;" role="progressbar">90%</div>
 
-            <div class="radial-progress" style="--value:90;" role="progressbar">100%</div>
+        <div
+          class="flex flex-col lg:flex-row mt-8 space-y-16 justify-around items-center"
+        >
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-red-500"
+              style="--value: 87; --size: 12rem; --thickness: 1rem"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h4 class="font-extrabold">Prayer Facility</h4>
+            <p class="w-2/3 mx-auto text-paragraph">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#49D293]"
+              style="--value: 95; --size: 12rem; --thickness: 1rem"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h4 class="font-extrabold">Experienced Coach</h4>
+            <p class="w-2/3 mx-auto text-paragraph">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#FFB546]"
+              style="--value: 90; --size: 12rem; --thickness: 1rem"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h4 class="font-extrabold">Senior Player</h4>
+            <p class="w-2/3 mx-auto text-paragraph">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
+
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-[#4C8DF1]"
+              style="--value: 80; --size: 12rem; --thickness: 1rem"
+              role="progressbar"
+            >
+              80%
+            </div>
+
+            <h4 class="font-extrabold">Training Ground</h4>
+            <p class="w-2/3 mx-auto text-paragraph">
+              Amet consectetur. Condimentum dignissim adipiscing .
+            </p>
+          </div>
         </div>
       </section>
     </main>

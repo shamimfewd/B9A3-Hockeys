@@ -52,7 +52,58 @@
   </head>
   <body class="font-sans">
     <header class="container mx-auto">
-      <div class="my-12">
+      <!-- ====navbar section ====-->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-red-500">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-500">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn bg-[#FF4240] text-white font-bold hover:bg-violet-600 hover:border-violet-600"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+
+      <!-- <banner section> -->
+      <div class="mt-4">
         <div class="carousel w-full">
           <div
             id="slide1"
@@ -98,7 +149,7 @@
     <!-- <==============main section================> -->
     <main class="container mx-auto">
       <!-- <=========Professional Hockeys Club=============> -->
-      <section class="my-24">
+      <section class="mb-24 mt-48">
         <h3 class="text-3xl text-center mb-4 font-bold text-[#131318]">
           Professional Hockeys Club
         </h3>
@@ -697,7 +748,12 @@
                   rows="10"
                 ></textarea>
               </div>
-              <button class="btn font-bold text-white bg-[#FF4240] w-full hover:bg-violet-600" type="submit">Submit</button>
+              <button
+                class="btn font-bold text-white bg-[#FF4240] w-full hover:bg-violet-600"
+                type="submit"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
@@ -706,10 +762,18 @@
         <div class="my-10 bg-[#F3F4F6] rounded-xl text-center pt-6">
           <h3 class="font-semibold text-2xl">Social Media</h3>
           <div class="pb-6 pt-4 space-x-4">
-            <i class="fa-brands fa-facebook text-gray-400 text-3xl cursor-pointer"></i>
-            <i class="fa-brands fa-twitter text-gray-400 text-3xl cursor-pointer"></i>
-            <i class="fa-brands fa-instagram text-gray-400 text-3xl cursor-pointer"></i>
-            <i class="fa-brands fa-github text-gray-400 text-3xl cursor-pointer"></i>
+            <i
+              class="fa-brands fa-facebook text-gray-400 text-3xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-twitter text-gray-400 text-3xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-gray-400 text-3xl cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-github text-gray-400 text-3xl cursor-pointer"
+            ></i>
           </div>
         </div>
       </section>

@@ -13,6 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- <=====Font Awesome=======> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- <===daisyUi and tailwind links===> -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
@@ -104,10 +113,15 @@
           <div class="text-center space-y-4 lg:mt-20">
             <div
               class="radial-progress text-red-500"
-              style="--value: 87; --size: 12rem; --thickness: 1rem"
+              style="
+                --value: 87;
+                --size: 12rem;
+                --thickness: 1rem;
+                rotate: 140deg;
+              "
               role="progressbar"
             >
-              87%
+              <span style="rotate: -140deg">87%</span>
             </div>
             <h4 class="font-extrabold">Prayer Facility</h4>
             <p class="w-2/3 mx-auto text-paragraph">
@@ -118,10 +132,15 @@
           <div class="text-center space-y-4">
             <div
               class="radial-progress text-[#49D293]"
-              style="--value: 95; --size: 12rem; --thickness: 1rem"
+              style="
+                --value: 95;
+                --size: 12rem;
+                --thickness: 1rem;
+                rotate: 120deg;
+              "
               role="progressbar"
             >
-              95%
+              <span style="rotate: -120deg">95%</span>
             </div>
             <h4 class="font-extrabold">Experienced Coach</h4>
             <p class="w-2/3 mx-auto text-paragraph">
@@ -132,10 +151,15 @@
           <div class="text-center space-y-4">
             <div
               class="radial-progress text-[#FFB546]"
-              style="--value: 90; --size: 12rem; --thickness: 1rem"
+              style="
+                --value: 90;
+                --size: 12rem;
+                --thickness: 1rem;
+                rotate: 120deg;
+              "
               role="progressbar"
             >
-              90%
+              <span class="" style="rotate: -120deg">90%</span>
             </div>
             <h4 class="font-extrabold">Senior Player</h4>
             <p class="w-2/3 mx-auto text-paragraph">
@@ -146,10 +170,15 @@
           <div class="text-center space-y-4">
             <div
               class="radial-progress text-[#4C8DF1]"
-              style="--value: 80; --size: 12rem; --thickness: 1rem"
+              style="
+                --value: 80;
+                --size: 12rem;
+                --thickness: 1rem;
+                rotate: 120deg;
+              "
               role="progressbar"
             >
-              80%
+              <span class="" style="rotate: -120deg"> 80%</span>
             </div>
 
             <h4 class="font-extrabold">Training Ground</h4>
@@ -173,7 +202,7 @@
         <div class="grid sm:grid-cols-1 lg:grid-cols-12 gap-4 mt-12">
           <!------ program_1 ------>
           <div
-            class="Program_card_1  bg-no-repeat rounded-xl bg-center bg-cover lg:col-span-6 text-white pt-32 pb-8 px-8 space-y-8"
+            class="Program_card_1 bg-no-repeat rounded-xl bg-center bg-cover lg:col-span-6 text-white pt-32 pb-8 px-8 space-y-8"
           >
             <h4 class="text-2xl font-extrabold text-white">Junior Program</h4>
             <p class="w-3/3">
@@ -182,39 +211,125 @@
               morbi nulla. Tortor congue sed et in.
             </p>
 
-            <button class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white">Register Now!</button>
+            <button
+              class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white"
+            >
+              Register Now!
+            </button>
           </div>
 
           <!------ program_2 ------>
           <div
             class="Program_card_2 bg-no-repeat rounded-xl bg-center bg-cover lg:col-span-6 text-white pt-32 pb-8 px-8 space-y-8"
           >
-          <h4 class="text-2xl font-extrabold text-white">Teenager Program</h4>
-          <p class="w-3/3 text-white">
-            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-            morbi nulla. Tortor congue sed et in.
-          </p>
-          <button class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white">Register Now!</button>
-          
-        </div>
+            <h4 class="text-2xl font-extrabold text-white">Teenager Program</h4>
+            <p class="w-3/3 text-white">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white"
+            >
+              Register Now!
+            </button>
+          </div>
 
           <!------ program_3 ------>
           <div
             class="Program_card_3 bg-no-repeat rounded-xl bg-center bg-cover py-8 lg:col-span-12 text-white pt-40 pb-8 px-8 space-y-8"
           >
-          <h4 class="text-2xl font-extrabold text-white">Professional Program</h4>
-          <p class=" lg:w-1/3 text-white">
-            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
-            morbi nulla. Tortor congue sed et in.
-          </p>
-          <button class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white">Register Now!</button>
-          
+            <h4 class="text-2xl font-extrabold text-white">
+              Professional Program
+            </h4>
+            <p class="lg:w-1/3 text-white">
+              Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+              morbi nulla. Tortor congue sed et in.
+            </p>
+            <button
+              class="btn font-bold bg-[#FF4240] border-[#FF4240] text-white"
+            >
+              Register Now!
+            </button>
           </div>
         </div>
       </section>
+
+      <!-- <==========Our New Products=============> -->
+      <section>
+        <h3 class="text-3xl text-center mb-4 font-bold text-[#131318]">
+          Our New Products
+        </h3>
+        <p class="w-auto lg:w-2/4 text-center mx-auto text-paragraph">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer
+      class="footer p-10 py-24 bg-[#131318] mt-24 grid grid-cols-1 lg:grid-cols-4 text-center lg:text-start"
+    >
+      <aside class="">
+        <h3
+          class="text-3xl font-extrabold text-white text-center lg:text-start lg:mx-0 mx-auto"
+        >
+          Get In Touch
+        </h3>
+        <p class="text-[#FBFBFB] text-center lg:text-start mx-auto">
+          Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+          dolor. Purus urna in sit nullam proin.
+        </p>
+        <p
+          class="text-white space-x-2 text-center lg:text-start lg:mx-0 mx-auto"
+        >
+          <i class="fa-regular fa-envelope text-red-500"></i
+          ><span>hockeys@support.com</span>
+        </p>
+        <p
+          class="text-white space-x-2 text-center lg:text-start lg:mx-0 mx-auto"
+        >
+          <i class="fa-solid fa-phone text-red-500"></i>
+          <span>(+62) 123-321-543</span>
+        </p>
+      </aside>
+
+      <div class="flex justify-center items-center lg:mx-0 mx-auto space-x-40">
+        <nav class="text-white lg:ml-24">
+          <header class="footer-title text-[#fff]">Company</header>
+          <a class="link link-hover">About_us</a>
+          <br />
+          <a class="link link-hover">Leadership</a>
+          <br />
+          <a class="link link-hover">Careers</a>
+          <br />
+          <a class="link link-hover">News_&_Article</a>
+          <br />
+          <a class="link link-hover">Legal_Notice</a>
+        </nav>
+
+        <nav class="text-white ml-20 mx-auto">
+          <header class="footer-title">Support</header>
+          <a class="link link-hover">Help<span> </span>Center</a>
+          <br />
+          <a class="link link-hover">FAQ</a>
+          <br />
+          <a class="link link-hover">Ticket<span>_</span>Support</a>
+          <br />
+          <a class="link link-hover">Contact<span></span> Us</a>
+        </nav>
+      </div>
+
+      <nav class="text-white lg:ml-64 lg:text-start text-center mx-auto mt-1">
+        <header class="footer-title">Services</header>
+        <a class="link link-hover" href="#">Academy</a>
+        <a class="link link-hover" href="#">Group_Lesson</a>
+
+        <a class="link link-hover" href="#">Private_Lesson</a>
+        <a class="link link-hover" href="#">Hockeys_for_kids</a>
+        <a class="link link-hover" href="#">Hockeys_for_Adult</a>
+      </nav>
+    </footer>
   </body>
 </html>

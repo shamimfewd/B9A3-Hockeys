@@ -1,5 +1,19 @@
-.carousel_image1,.carousel_image2 {
-background-image: url('./B9A3-Hockeys-main/Images/1.png');
+.carousel_image1,
+.carousel_image2 {
+  background-image: url("./B9A3-Hockeys-main/Images/1.png");
 }
 
+.Program_card_1 {
+  background-image: linear-gradient(#13131880, #13131880),
+    url("./B9A3-Hockeys-main/Images/2.png");
+}
 
+.Program_card_2 {
+  background-image: linear-gradient(#131318b4, #1313189b),
+    url("./B9A3-Hockeys-main/Images/3.png");
+}
+
+.Program_card_3 {
+  background-image: linear-gradient(#13131880, #13131880),
+    url("./B9A3-Hockeys-main/Images/4.png");
+}
